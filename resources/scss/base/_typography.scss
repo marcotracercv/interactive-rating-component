@@ -1,0 +1,27 @@
+@use 'abstracts/variables' as *;
+
+html{
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: $ff-base;
+    src: url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+}
+
+body{
+    font-family: $ff-base;
+    font-size:clamp( 1.5rem, 1.3239rem + 0.4695vw, 2rem )
+}
+
+h1{
+    font-size: $fs-title;
+    font-weight: $fw-700;
+}
+
+p{
+    font-size: $fs-base;
+    font-weight: $fw-400;
+}
+
+  
