@@ -1,0 +1,71 @@
+@use 'abstracts/variables' as *;
+
+
+.rating-modal{
+    min-width: 35rem;
+    max-width: 40rem;
+    max-height: 40rem;
+    border-radius: 7%;
+    padding: 1.5em;
+    background-color: $darkBlue;
+
+    &__icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border-radius: 50%;
+        background-color: $darkGrey;
+    }
+
+    &__title{
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+        color: $white;
+    }
+
+    &__text{
+        color: $lightGrey;
+        margin-bottom: 1em;
+    }
+
+    &__rating-container{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: $lightGrey;
+        margin: 1.5em 0;
+    }
+
+    &__rating{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4.5rem;
+        height: 4.5rem;
+        border-radius: 50%;
+        background-color: $darkGrey;
+        font-size: $fs-base;
+    }
+
+    &__rating > input {
+        display:none
+    }
+
+    &__btn{
+        display: block;
+        width: 100%;
+        margin-top: 1em;
+        padding: 0.6em 0;
+        border-radius: 2rem;
+        border: none;
+        background-color: $orange;
+        text-transform: uppercase;
+        color: $white;
+        letter-spacing: 2px;
+        font-size: $fs-base;
+        font-weight: $fw-700;
+    }
+
+}
