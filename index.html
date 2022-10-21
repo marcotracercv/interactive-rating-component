@@ -21,80 +21,87 @@
   </head>
   <body>
     <!---- Modal rating card ---->
-    <div class="rating-modal">
-      <form class="rating-modal__form" action="#">
-        <div class="rating-modal__icon">
+
+    <!-- <div class="modal">
+      <form class="modal__form" action="#">
+        <div class="modal__icon">
           <img src="/build/img/icon-star.svg" alt="rating image" />
         </div>
-        <h1 class="rating-modal__title">How did we do?</h1>
-        <p class="rating-modal__text">
+        <h1 class="modal__title">How did we do?</h1>
+        <p class="modal__text">
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
-
-          <!-- 1 2 3 4 5 Submit You -->
-          <!-- selected out of 5 Thank you! We appreciate you taking the time to give -->
-          <!-- a rating. If you ever need more support, don’t hesitate to get in -->
-          <!-- touch! -->
         </p>
-        <div class="rating-modal__rating-container">
-          <div class="rating-modal__rating">
+        <div class="modal__rating-container">
+          <div class="modal__rating">
             <input
               type="radio"
               value="1"
               name="rating"
               id="rating-1"
-              class="rating-modal__rating-input"
+              class="modal__rating-input"
             />
-            <label for="rating-1" class="rating-modal__rating-value">1</label>
+            <label for="rating-1" class="modal__rating-value">1</label>
           </div>
-          <div class="rating-modal__rating">
+          <div class="modal__rating">
             <input
               type="radio"
               value="2"
               name="rating"
               id="rating-2"
-              class="rating-modal__rating-input"
+              class="modal__rating-input"
             />
-            <label for="rating-2" class="rating-modal__rating-value">2</label>
+            <label for="rating-2" class="modal__rating-value">2</label>
           </div>
 
-          <div class="rating-modal__rating">
+          <div class="modal__rating">
             <input
               type="radio"
               value="3"
               name="rating"
               id="rating-3"
-              class="rating-modal__rating-input"
+              class="modal__rating-input"
             />
-            <label for="rating-3" class="rating-modal__rating-value">3</label>
+            <label for="rating-3" class="modal__rating-value">3</label>
           </div>
 
-          <div class="rating-modal__rating">
+          <div class="modal__rating">
             <input
               type="radio"
               value="4"
               name="rating"
               id="rating-4"
-              class="rating-modal__rating-input"
+              class="modal__rating-input"
             />
-            <label for="rating-4" class="rating-modal__rating-value">4</label>
+            <label for="rating-4" class="modal__rating-value">4</label>
           </div>
 
-          <div class="rating-modal__rating">
+          <div class="modal__rating">
             <input
               type="radio"
               value="5"
               name="rating"
               id="rating-5"
-              class="rating-modal__rating-input"
+              class="modal__rating-input"
             />
-            <label for="rating-5" class="rating-modal__rating-value">5</label>
+            <label for="rating-5" class="modal__rating-value">5</label>
           </div>
         </div>
-        <button type="submit" class="rating-modal__btn">submit</button>
+        <button type="submit" class="modal__btn">submit</button>
       </form>
-    </div>
+    </div> -->
 
-    <!---- congrat modal  ---->
+    <!---- thanks modal  ---->
+    <div class="modal modal--align-center">
+      <div class="modal__icon modal__icon--w-h-100">
+        <img src="/build/img/illustration-thank-you.svg" alt="rating image" />
+      </div>
+      <span class="modal__info"> You selected 4 out of 5 </span>
+      <h1 class="modal__title">Thank you!</h1>
+      <p class="modal__text">
+        We appreciate you taking the time to give a rating. If you ever need
+        more support, don’t hesitate to get in touch!
+      </p>
+    </div>
   </body>
 </html>
