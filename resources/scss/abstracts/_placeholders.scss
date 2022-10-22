@@ -1,0 +1,21 @@
+@use 'abstracts/variables' as *;
+
+%modal{
+    min-width: 35rem;
+    max-width: 40rem;
+    max-height: 40rem;
+    border-radius: 3rem;
+    padding: 2em 1.8em;
+    background-color: $darkBlue;
+}
+
+%title{
+    margin-top: 0.8em;
+    margin-bottom: 0.4em;
+    color: $white;
+}
+
+%text{
+    color: $lightGrey;
+    margin-bottom: 1em;
+}

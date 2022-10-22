@@ -22,7 +22,7 @@
   <body>
     <!---- Modal rating card ---->
 
-    <!-- <div class="modal">
+    <div id="rating-modal" class="modal">
       <form class="modal__form" action="#">
         <div class="modal__icon">
           <img src="/build/img/icon-star.svg" alt="rating image" />
@@ -32,7 +32,7 @@
           Please let us know how we did with your support request. All feedback
           is appreciated to help us improve our offering!
         </p>
-        <div class="modal__rating-container">
+        <div id="rating-opt" class="modal__rating-container">
           <div class="modal__rating">
             <input
               type="radio"
@@ -87,16 +87,25 @@
             <label for="rating-5" class="modal__rating-value">5</label>
           </div>
         </div>
-        <button type="submit" class="modal__btn">submit</button>
+        <button
+          id="rating-btn"
+          type="submit"
+          data-modal="feedback-modal"
+          class="modal__btn"
+        >
+          submit
+        </button>
       </form>
-    </div> -->
+    </div>
 
-    <!---- thanks modal  ---->
-    <div class="modal modal--align-center">
+    <!---- feedback modal  ---->
+    <div id="feedback-modal" class="modal modal--align-center">
       <div class="modal__icon modal__icon--w-h-100">
         <img src="/build/img/illustration-thank-you.svg" alt="rating image" />
       </div>
-      <span class="modal__info"> You selected 4 out of 5 </span>
+      <span id="feedback" class="modal__info">
+        You selected <span id="feedback-value"></span> out of 5
+      </span>
       <h1 class="modal__title">Thank you!</h1>
       <p class="modal__text">
         We appreciate you taking the time to give a rating. If you ever need
@@ -104,4 +113,6 @@
       </p>
     </div>
   </body>
+
+  <script src="/build/js/main.js"></script>
 </html>
