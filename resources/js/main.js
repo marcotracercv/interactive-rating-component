@@ -18,7 +18,8 @@ ratingBtn.addEventListener('click', (event) => {
 
     feedbackValue.innerHTML = answer.value;
     ratingBtn.setAttribute('disabled', true);
-    feedbackModal.classList.toggle('show');
-    ratingModal.classList.toggle('show');
+    feedbackModal.classList.toggle('hide');
+    ratingModal.classList.toggle('hide');
 });
 
+ratingOpt
