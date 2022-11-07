@@ -21,5 +21,3 @@ ratingBtn.addEventListener('click', (event) => {
     feedbackModal.classList.toggle('hide');
     ratingModal.classList.toggle('hide');
 });
-
-ratingOpt
